@@ -1,0 +1,16 @@
+[package]
+org = "riyajathahamed"
+name = "Demo_Materials"
+version = "0.1.0"
+distribution = "2201.9.0"
+
+[build-options]
+observabilityIncluded = true
+
+[ballerina.observe]
+metricsEnabled=true
+metricsReporter="prometheus"
+
+[ballerinax.prometheus]
+port=9091
+host="0.0.0.0"
